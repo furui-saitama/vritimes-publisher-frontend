@@ -24,7 +24,12 @@ module.exports = {
   plugins: ['react', '@typescript-eslint'],
   ignorePatterns: ['.eslintrc.js'],
   rules: {
+    '@typescript-eslint/no-floating-promises': 'off',
+    'react/destructuring-assignment': 'off',
+    'no-console': 'off',
+    'arrow-body-style': 'off',
     'react/function-component-definition': 'off',
+    'react/require-default-props': 'off',
     'no-use-before-define': 'off',
     '@typescript-eslint/no-use-before-define': 'off',
     'import/prefer-default-export': 'off',

@@ -1,9 +1,27 @@
+import i18n from 'i18next';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
 import './index.css';
+import { initReactI18next } from 'react-i18next';
+import enJson from './locales/en.json';
+import idJson from './locales/id.json';
 import reportWebVitals from './reportWebVitals';
 import App from './view/App';
+
+i18n.use(initReactI18next).init({
+  resources: {
+    en: {
+      translation: enJson,
+    },
+    id: {
+      translation: idJson,
+    },
+  },
+  lng: 'en',
+  fallbackLng: 'en',
+  interpolation: { escapeValue: false },
+});
 
 ReactDOM.render(
   <React.StrictMode>
