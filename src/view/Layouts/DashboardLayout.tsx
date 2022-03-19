@@ -7,6 +7,7 @@ import { Outlet, useNavigate } from 'react-router-dom';
 const DashboardLayout: VFC = () => {
   const navigate = useNavigate();
 
+  // TODO: Fix side menu's CSS.
   return (
     <div className="bg-background flex flex-row min-h-screen">
       <div className="bg-background w-80">
